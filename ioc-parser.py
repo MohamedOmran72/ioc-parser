@@ -113,7 +113,7 @@ class IOC_Parser(object):
     def load_patterns(self, fpath):
         config = ConfigParser.ConfigParser()
         with open(fpath) as f:
-            config.readfp(f)
+            config.read_file(f)
 
         for ind_type in config.sections():
             try:
